@@ -45,7 +45,7 @@ struct ContentView: View {
             Image(systemName: "heart.fill")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Swiftful Thinking!")
+            Text("Swiftful!")
             
             Button("Click me!"){
                 openView.toggle()
