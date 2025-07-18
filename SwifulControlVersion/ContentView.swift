@@ -27,7 +27,10 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
+    @State var openView: Bool = false
+
     var body: some View {
         VStack {
             Image(systemName: "heart.fill")
@@ -36,7 +39,7 @@ struct ContentView: View {
             Text("Swiftful Thinking!")
             
             Button("Click me!"){
-                
+                openView.toggle()
             }
             .foregroundStyle(.white)
             .background(Color.blue)
